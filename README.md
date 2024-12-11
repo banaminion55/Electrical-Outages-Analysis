@@ -77,7 +77,7 @@ Pictured below is a histogram of the number of customers affected by each outage
   width="800"
   height="600"
   frameborder="0"
-  border="display:block"
+  display="block"
 ></iframe>
 
 
@@ -90,7 +90,7 @@ Pictured below is a box plot of the number of customers affected by the outage b
   width="800"
   height="600"
   frameborder="0"
-  border="display:block"
+  display="block"
 ></iframe>
 
 
@@ -137,7 +137,7 @@ Test Stastic: Total Varation Distance
   width="800"
   height="600"
   frameborder="0"
-  border="display:block"
+  display="block"
 ></iframe>
 
 Significance Level: .05
@@ -151,7 +151,7 @@ Conclusion: Reject the null, indicating that the missigness of Demand Loss is de
   width="800"
   height="600"
   frameborder="0"
-  border="display:block"
+  display="block"
 ></iframe>
 
 
@@ -169,6 +169,19 @@ Significance Level: .05
 P-Value: 0.315
 
 Conclusion: Fail to reject the null, indicating that the missigness of Demand Loss is not dependent on Climate Category.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Hypothesis Testing:
