@@ -1,8 +1,12 @@
 # Power Outages Analysis and Modeling
 
+### Project for DSC 80 at UCSD
+
+### Name: Noah Golder
+
 ## Introduction and Question Identification
 
-The power outages dataset contains data from the major outages in the United States from January 2000 to July 2016, including features such as weather information and characteristics about the states and people affected by the outages.
+The power outages dataset contains data from the major outages in the United States from January 2000 to July 2016, including features such as weather information and characteristics about the states and people affected by the outages. There are a total of 1534 outages reported in the dataset.
 
 #### Central Question:
 
@@ -84,7 +88,7 @@ Pictured below is a histogram of the number of customers affected by each outage
 
 #### Bivariate Analysis:
 
-Pictured below is a box plot of the number of customers affected by the outage based on the cause category of the outage. For severe weather, system operability disruption, and equipment failure, there seem to be larger values for the number of customers affected overall. 
+Pictured below is a box plot of the number of customers affected by the outage based on the cause category of the outage. For severe weather, system operability disruption, and equipment failure, there seem to be larger values for the number of customers affected overall. There are also many outliers in the number of customers affected.
 
 <iframe
   src="assets/Box_Plot.html"
@@ -197,15 +201,17 @@ Alternative: In the population, outage durations in cold climates are greater th
 
 I am trying to examine the factors that can contribute to the severity of outages, and overall, it makes sense that outage durations for colder climates will take longer because electrical equipment might be damaged due to severe cold weather.
 
+Note: Cold observations include only Climate Categories of cold, while non-cold observations inlcude Climate Categories of normal and warm.
+
 Test statistic: Difference in Means
 
 Significance level: .05 (Standard Significance Level)
 
-Difference in means makes sense because I am looking for a directional test that can determine whether outage durations in cold climates are greater than outage durations in warm climates.
+Difference in means makes sense because I am looking for a directional test that can determine whether outage durations in cold climates are greater than outage durations in non-cold climates.
 
 P-Value: 0.422
 
-Conclusion: Fail to reject the null, indicating that observed differences in outage duration in cold versus warm climates are likely due to random chance. Note: this is not an absolute conclusion -- only a likelihood based on our test.
+Conclusion: Fail to reject the null, indicating that observed differences in outage duration in cold versus non-cold climates are likely due to random chance. Note: this is not an absolute conclusion -- only a likelihood based on our test.
 
 
 ## Framing a Prediction Problem
@@ -231,7 +237,7 @@ I chose these features because it makes sense that there should be a relationshi
 
 I split the training and testing data with a test_size of 0.2, then fit the model.
 
-Overall, the model performed poorly, with an r-squared of .058 on the testing set. In other words, the model captures about 5.8% of the variance in OUTAGE.DURATION, which is not great.
+Overall, I do not believe my model is good because it has an r-squared of .058 on the testing set. In other words, the model captures about 5.8% of the variance in OUTAGE.DURATION, which is not ideal. We would like to make better predictions overall.
 
 
 ## Final Model
