@@ -171,7 +171,7 @@ P-Value: 0.315
 Conclusion: Fail to reject the null, indicating that the missigness of Demand Loss is not dependent on Climate Category.
 
 
-
+<br><br><br><br><br><br><br><br>
 
 
 
